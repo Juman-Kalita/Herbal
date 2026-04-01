@@ -1,0 +1,59 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --green: #2d6a2d;
+  --green-mid: #3d8b3d;
+  --green-light: #5aaa5a;
+  --green-pale: #e8f5e8;
+  --green-dark: #1a4a1a;
+  --white: #ffffff;
+  --text: #1c2b1c;
+  --text-mid: #3a4f3a;
+  --text-muted: #7a8f7a;
+  --border: #e0ece0;
+  --bg: #f5fbf5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+a { text-decoration: none; }
+
+img { display: block; }
+
+/* Responsive helpers */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .why-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .products-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .testi-grid { grid-template-columns: 1fr !important; }
+  .blog-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .banner-grid { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 768px) {
+  .nav-links-desktop { display: none !important; }
+  .nav-cta-desktop { display: none !important; }
+  .hamburger { display: flex !important; }
+  .products-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .blog-grid { grid-template-columns: 1fr !important; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr !important; }
+  .why-grid { grid-template-columns: 1fr !important; }
+  .footer-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 900px) {
+  .product-showcase { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+}
