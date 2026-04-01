@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion'
 import { useInView } from './useInView'
-import { steps } from '../data'
+
+const steps = [
+  { num: '01', icon: '🥄', title: 'Take a Small Amount', desc: 'Take a small amount of powder on your fingertip or toothbrush.' },
+  { num: '02', icon: '🦷', title: 'Brush & Massage', desc: 'Gently brush or massage on teeth and gums in circular motions.' },
+  { num: '03', icon: '💧', title: 'Rinse Thoroughly', desc: 'Rinse your mouth thoroughly with clean water.' },
+  { num: '04', icon: '📅', title: 'Use Daily', desc: 'Use daily morning and night for best long-term results.' },
+]
 
 export default function HowToUse() {
   const { ref, inView } = useInView()

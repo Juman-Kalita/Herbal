@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion'
 import { useInView } from './useInView'
-import { ingredients } from '../data'
+
+const ingredients = [
+  { name: 'Clove', tag: 'Antiseptic', image: '/img1.png', benefits: ['Reduces plaque and bad breath', 'Helps numb tooth pain', 'Anti-inflammatory for gums'] },
+  { name: 'Alum', tag: 'Astringent', image: '/img1.png', benefits: ['Strengthens gums', 'Reduces bleeding', 'Helps with mouth ulcers'] },
+  { name: 'Raw Salt', tag: 'Antibacterial', image: '/img1.png', benefits: ['Fights bacteria and plaque', 'Reduces bad breath', 'Supports gum health'] },
+  { name: 'Neem', tag: 'Herbal', image: '/img1.png', benefits: ['Prevents tooth decay', 'Fights bacteria', 'Reduces gum inflammation'] },
+  { name: 'Custard Apple Leaves', tag: 'Anti-inflammatory', image: '/img1.png', benefits: ['Fights plaque and bad breath', 'Reduces swelling', 'Supports gum healing'] },
+]
 
 export default function Ingredients() {
   const { ref, inView } = useInView()

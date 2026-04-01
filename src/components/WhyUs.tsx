@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion'
 import { useInView } from './useInView'
-import { whyUs } from '../data'
+
+const whyUs = [
+  { icon: '🌱', title: '100% Natural', desc: 'Every ingredient sourced from nature with zero synthetic additives.' },
+  { icon: '🚫', title: 'No Chemicals', desc: 'Free from fluoride, SLS, parabens, and artificial preservatives.' },
+  { icon: '🏺', title: 'Ayurvedic', desc: 'Rooted in centuries-old Ayurvedic wisdom for oral wellness.' },
+  { icon: '✅', title: 'Safe & Effective', desc: 'Gentle on enamel, tough on bacteria — safe for daily use.' },
+  { icon: '💰', title: 'Affordable', desc: 'Premium quality at a price that does not break the bank.' },
+]
 
 export default function WhyUs() {
   const { ref, inView } = useInView()

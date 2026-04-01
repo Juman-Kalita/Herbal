@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
 import { useInView } from './useInView'
-import { uses } from '../data'
+
+const uses = [
+  { icon: '🪥', title: 'Tooth Powder', desc: 'Use directly as a daily tooth powder for cleaning and whitening.' },
+  { icon: '🫗', title: 'Mouthwash', desc: 'Boil in water, cool, and use as a natural herbal mouthwash.' },
+  { icon: '🌿', title: 'Gum Relief', desc: 'Apply directly on gums for soothing relief from inflammation.' },
+]
 
 const pills = ['🌰 Clove oil for toothache', '🌿 Neem for daily cleansing', '🧂 Alum for bleeding gums']
 
